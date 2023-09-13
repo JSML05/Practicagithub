@@ -27,6 +27,7 @@ public class Main {
         int cedula= 0;
         int año_nacimiento= 0;
         int edad= 0;
+        int var=0;
         
         //creacion de objeto
         Persona objpersona1 = new Persona ();
