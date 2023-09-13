@@ -17,6 +17,17 @@ public class Persona {
     public String sexo;
     public int cedula;
     public int año_nacimiento;
+    public String apodo;
+
+    public String getApodo() {
+        return apodo;
+    }
+
+    public void setApodo(String apodo) {
+        this.apodo = apodo;
+    }
+    
+    
     
     //constructor no parametrizado 
     public Persona (){}
