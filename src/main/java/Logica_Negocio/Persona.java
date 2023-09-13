@@ -34,9 +34,10 @@ public class Persona {
     
     //constructor parametrizado
 
-    public Persona(String nombres, String apellidos, String ciudad_nacimiento, String dpto_nacimiento, String sexo, int cedula, int año_nacimiento) {
+    public Persona(String nombres, String apellidos, String apodo, String ciudad_nacimiento, String dpto_nacimiento, String sexo, int cedula, int año_nacimiento) {
         this.nombres = nombres;
         this.apellidos= apellidos;
+        this.apodo= apodo;
         this.ciudad_nacimiemto= ciudad_nacimiento;
         this.dpto_nacimiemto= dpto_nacimiento;
         this.sexo= sexo;

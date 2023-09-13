@@ -21,6 +21,7 @@ public class Main {
         // declaracion de variables 
         String nombres= "";
         String apellidos= "";
+        String apodo="";
         String ciudad_nacimiento= "";
         String dpto_nacimiento= "";
         String sexo= "";
@@ -42,6 +43,10 @@ public class Main {
         System.out.println("Digite los apellidos de la personas: ");
         apellidos= scan.nextLine();
         objpersona1.setApellidos(apellidos);
+        
+        System.out.println("Digite el apodo de la persona: ");
+        apodo= scan.nextLine();
+        objpersona1.setApodo(apodo);
         
         System.out.println("Digite la Ciudad de nacimiento de la persona: ");
         ciudad_nacimiento= scan.nextLine();
@@ -67,12 +72,13 @@ public class Main {
         edad= 2023-objpersona1.getAño_nacimiento();
         
         //creacion de objeto con constructor parametrizado
-        Persona objpersona = new Persona(nombres, apellidos, ciudad_nacimiento, dpto_nacimiento, sexo, cedula, año_nacimiento);
+        Persona objpersona = new Persona(nombres, apellidos, apodo, ciudad_nacimiento, dpto_nacimiento, sexo, cedula, año_nacimiento);
         
         //impresion en pantalla
         System.out.println("Documento de identidad digital: ");
         System.out.println("Nombres: "+"\t"+ objpersona1.getNombres());
         System.out.println("Apellidos: "+"\t"+ objpersona1.getApellidos());
+        System.out.println("Apodo: "+"\t"+ objpersona1.getApodo());
         System.out.println("Ciudad y departamento de nacimiento:"+"\t"+ objpersona1.getCiudad_nacimiemto()+"- "+objpersona1.getDpto_nacimiemto());
         System.out.println("Sexo: "+"\t"+ objpersona1.getSexo());
         System.out.println("Numero: "+"\t"+ objpersona1.getCedula());
@@ -83,6 +89,7 @@ public class Main {
         System.out.println("Documento de identidad digital: ");
         System.out.println("Nombres: "+"\t"+ objpersona.getNombres());
         System.out.println("Apellidos: "+"\t"+ objpersona.getApellidos());
+        System.out.println("Apodo: "+"\t"+ objpersona.getApodo());
         System.out.println("Ciudad y departamento de nacimiento:"+"\t"+ objpersona.getCiudad_nacimiemto()+"-"+objpersona.getDpto_nacimiemto());
         System.out.println("Sexo: "+"\t"+ objpersona.getSexo());
         System.out.println("Numero: "+"\t"+ objpersona.getCedula());
